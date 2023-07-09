@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task2/pages/login_page.dart';
+import 'package:task2/pages/opening_screen.dart';
 
 void main() {
   runApp(const loginScreean());
@@ -11,7 +12,8 @@ class loginScreean extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: loginPage(),
+      debugShowCheckedModeBanner: false,
+      home: OpeningScreen(),
     );
   }
 }
