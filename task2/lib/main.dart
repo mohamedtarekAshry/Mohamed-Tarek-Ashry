@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task2/pages/categories_page.dart';
 import 'package:task2/pages/login_page.dart';
 import 'package:task2/pages/opening_screen.dart';
 

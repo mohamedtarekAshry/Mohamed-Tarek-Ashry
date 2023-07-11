@@ -22,13 +22,13 @@ class OpeningScreen extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.27,
               ),
               Image.asset(
-                "images/quiz-2074324_640.png",
+                "images/icon.png",
                 height: MediaQuery.of(context).size.height * 0.2,
                 width: MediaQuery.of(context).size.height * 0.2,
               ),
               Text("ITI Quiz App",
                   style: TextStyle(
-                    color: Color.fromARGB(127, 255, 147, 59),
+                    color: Colors.yellow,
                     fontSize: 30,
                   )),
               const SizedBox(
@@ -36,7 +36,7 @@ class OpeningScreen extends StatelessWidget {
               ),
               Text("We Are Creative, enjoy our App",
                   style: TextStyle(
-                    color: Color.fromARGB(255, 211, 162, 1),
+                    color: Colors.white,
                     fontSize: 26,
                   )),
               Spacer(),
@@ -45,6 +45,7 @@ class OpeningScreen extends StatelessWidget {
                 margin: EdgeInsets.symmetric(vertical: 28, horizontal: 26),
                 child: ElevatedButton(
                   onPressed: () {
+                    Navigator.pop(context);
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => loginPage()),

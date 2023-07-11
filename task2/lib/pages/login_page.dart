@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task2/pages/categories_page.dart';
 
 class loginPage extends StatelessWidget {
   const loginPage({super.key});
@@ -15,8 +16,7 @@ class loginPage extends StatelessWidget {
             Container(
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
-              decoration:
-                  const BoxDecoration(color: Color.fromARGB(255, 57, 44, 117)),
+              decoration: const BoxDecoration(color: Colors.green),
               child: Align(
                   alignment: Alignment.topCenter,
                   child: Padding(
@@ -95,12 +95,17 @@ class loginPage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                         elevation: 15,
                         shadowColor: Colors.black,
-                        backgroundColor: Color.fromARGB(255, 57, 44, 117),
+                        backgroundColor: Colors.green,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30)),
                       ),
                       onPressed: () {
                         Navigator.pop(context);
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => categoriesPage()),
+                        );
                       },
                       child: const Text("Login"),
                     ),
